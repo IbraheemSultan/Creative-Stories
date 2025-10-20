@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme{
+    --color-bg:#FDFCFB;
+    --color-card-bg:#ffffff;
+    --color-primary-accent:#EC4899;
+    --color-secondary-accent:#8B5CF6;
+    --color-text-main:#1F2937;
+    --color-text-secondary:#6B7280;
+    --color-btn-hover:#F9A8D4;
+    --color-border:#E5E7EB;
+}
+
+.bg-text{
+    @apply bg-gradient-to-r from-primary-accent to-secondary-accent text-transparent bg-clip-text ;
+}
+.bg-grad{
+    @apply bg-gradient-to-r from-primary-accent to-secondary-accent text-white outline-1 hover:outline-primary-accent hover:border-primary-accent;
+}

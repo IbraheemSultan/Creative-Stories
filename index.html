@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwindcss link -->
+    <link href="public/output.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Aos CDN  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Creative Stories</title>
+</head>
+
+<body class="bg-bg">
+    <header data-aos="fade-up"
+        class="h-20 flex gap-10 items-center px-8 md:justify-start justify-between bg-card-bg border-b border-b-border w-full">
+        <h1 class="text-3xl font-bold bg-text">Creative Stories</h1>
+        <i class="fas fa-align-justify md:!hidden   cursor-pointer text-2xl peer"></i>
+        <nav class="peer-hover:flex hidden md:flex">
+            <ul class="flex gap-7">
+                <li class="duration-300 hover:text-primary-accent font-bold text-xl"><a href="#">Home</a></li>
+                <li class="duration-300 hover:text-primary-accent font-semibold text-xl text-text-secondary"><a
+                        href="#">Categories</a></li>
+                <li class="duration-300 hover:text-primary-accent font-semibold text-xl text-text-secondary"><a
+                        href="#">About</a></li>
+                <li class="duration-300 hover:text-primary-accent font-semibold text-xl text-text-secondary"><a
+                        href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="px-8 py-10" data-aos="fade-up">
+        <div class="m-auto max-w-lg mb-10 relative">
+            <i class="fa-solid fa-magnifying-glass absolute left-4 top-4 text-gray-400"></i>
+            <input type="search"
+                class=" w-full h-12 pl-12 pr-5 rounded-4xl border border-border focus:outline-primary-accent font-semibold"
+                name="search" id="search" placeholder="Search posts by title...">
+        </div>
+        <div class="" fade data-aos="fade-up">
+            <ul class="flex flex-wrap gap-4 justify-center btns">
+                <li class="cursor-pointer hover:bg-btn-hover hover:border-primary-accent duration-300 font-semibold   px-4 py-2 text-text-main border border-border rounded-4xl bg-grad "
+                    id="All">All</li>
+                <li class="cursor-pointer hover:bg-btn-hover hover:border-primary-accent duration-300 font-semibold   px-4 py-2 text-text-main border border-border rounded-4xl"
+                    id="Tech"><i class="mr-3 fas fa-laptop-code"></i>Tech</li>
+                <li class="cursor-pointer hover:bg-btn-hover hover:border-primary-accent duration-300 font-semibold   px-4 py-2 text-text-main border border-border rounded-4xl"
+                    id="Travel"><i class="mr-3 fas fa-plane"></i>Travel</li>
+                <li class="cursor-pointer hover:bg-btn-hover hover:border-primary-accent duration-300 font-semibold   px-4 py-2 text-text-main border border-border rounded-4xl"
+                    id="Food"><i class="mr-3 fas fa-utensils"></i>Food</li>
+                <li class="cursor-pointer hover:bg-btn-hover hover:border-primary-accent duration-300 font-semibold   px-4 py-2 text-text-main border border-border rounded-4xl"
+                    id="Design"><i class="mr-3 fas fa-palette"></i>Design</li>
+                <li class="cursor-pointer hover:bg-btn-hover hover:border-primary-accent duration-300 font-semibold   px-4 py-2 text-text-main border border-border rounded-4xl"
+                    id="LifeStyle"><i class="mr-3 fas fa-heart"></i>LifeStyle</li>
+            </ul>
+        </div>
+        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 py-20">
+
+            <div
+            data-aos="fade-up"
+                class="card hover:shadow-xl duration-700 hover:-translate-y-2 rounded-2xl border border-border bg-card-bg pb-7 overflow-hidden  ">
+                <div class="w-full h-50 bg-gray-500 mb-7 relative">
+                    <img src="img/image1.png" alt="" class="w-full h-50 object-cover">
+                    <span
+                        class="type absolute left-5 top-5 text- font-semibold text-white rounded-2xl px-4 py-1 bg-purple-800/80 ">Tech</span>
+                </div>
+                <h2 class=" title px-7 text-2xl font-semibold text-text-main mb-7 ">The Future of Remote Work</h2>
+                <p class=" text-xl  px-7 text-text-secondary mb-4 ">Exploring how technology is reshaping the way we
+                    work from home and collaborate with teams across the globe.</p>
+                <div class="px-7 flex justify-between">
+                    <span class="text-xl text-text-secondary">March 15, 2024</span>
+                    <a href="#"><i
+                            class="fas fa-arrow-right text-primary-accent hover:text-blue-700 duration-500 cursor-pointer"></i></a>
+                </div>
+            </div>
+
+            <div
+            data-aos="fade-up"
+                class="card hover:shadow-xl duration-700 hover:-translate-y-2 rounded-2xl border border-border bg-card-bg pb-7 overflow-hidden  ">
+                <div class="w-full h-50 bg-gray-500 mb-7 relative">
+                    <img src="img/image2.png" alt="" class="w-full h-50 object-cover">
+                    <span
+                        class="type absolute left-5 top-5 text- font-semibold text-white rounded-2xl px-4 py-1 bg-pink-500/80 ">Travel</span>
+                </div>
+                <h2 class=" title px-7 text-2xl font-semibold text-text-main mb-7 ">Hidden Gems of Southeast Asia</h2>
+                <p class=" text-xl  px-7 text-text-secondary mb-4 ">Discover breathtaking destinations off the beaten
+                    path that will make your next adventure unforgettable.</p>
+                <div class="px-7 flex justify-between">
+                    <span class="text-xl text-text-secondary">March 12, 2024</span>
+                    <a href="#"><i
+                            class="fas fa-arrow-right text-primary-accent hover:text-blue-700 duration-500 cursor-pointer"></i></a>
+                </div>
+            </div>
+
+            <div
+            data-aos="fade-up"
+                class="card hover:shadow-xl duration-700 hover:-translate-y-2 rounded-2xl border border-border bg-card-bg pb-7 overflow-hidden  ">
+                <div class="w-full h-50 bg-gray-500 mb-7 relative">
+                    <img src="img/image3.png" alt="" class="w-full h-50 object-cover">
+                    <span
+                        class="type absolute left-5 top-5 text- font-semibold text-white rounded-2xl px-4 py-1 bg-green-800/80 ">Food</span>
+                </div>
+                <h2 class=" title px-7 text-2xl font-semibold text-text-main mb-7 ">Morning Rituals That Energize</h2>
+                <p class=" text-xl  px-7 text-text-secondary mb-4 ">Exploring how technology is reshaping the way we
+                    work from home and collaborate with teams across the globe.</p>
+                <div class="px-7 flex justify-between">
+                    <span class="text-xl text-text-secondary">March 15, 2024</span>
+                    <a href="#"><i
+                            class="fas fa-arrow-right text-primary-accent hover:text-blue-700 duration-500 cursor-pointer"></i></a>
+                </div>
+            </div>
+
+            <div
+            data-aos="fade-up"
+                class="card hover:shadow-xl duration-700 hover:-translate-y-2 rounded-2xl border border-border bg-card-bg pb-7 overflow-hidden  ">
+                <div class="w-full h-50 bg-gray-500 mb-7 relative">
+                    <img src="img/image4.png" alt="" class="w-full h-50 object-cover">
+                    <span
+                        class="type absolute left-5 top-5 text- font-semibold text-white rounded-2xl px-4 py-1 bg-yellow-400/80 ">Design</span>
+                </div>
+                <h2 class=" title px-7 text-2xl font-semibold text-text-main mb-7 ">Color Psychology in Design</h2>
+                <p class=" text-xl  px-7 text-text-secondary mb-4 ">Exploring how technology is reshaping the way we
+                    work from home and collaborate with teams across the globe.</p>
+                <div class="px-7 flex justify-between">
+                    <span class="text-xl text-text-secondary">March 15, 2024</span>
+                    <a href="#"><i
+                            class="fas fa-arrow-right text-primary-accent hover:text-blue-700 duration-500 cursor-pointer"></i></a>
+                </div>
+            </div>
+
+            <div
+            data-aos="fade-up"
+                class="card hover:shadow-xl duration-700 hover:-translate-y-2 rounded-2xl border border-border bg-card-bg pb-7 overflow-hidden  ">
+                <div class="w-full h-50 bg-gray-500 mb-7 relative">
+                    <img src="img/image5.png" alt="" class="w-full h-50 object-cover">
+                    <span
+                        class="type absolute left-5 top-5 text- font-semibold text-white rounded-2xl px-4 py-1 bg-pink-500/80 ">LifeStyle</span>
+                </div>
+                <h2 class=" title px-7 text-2xl font-semibold text-text-main mb-7 ">Creating Your Perfect Reading Space
+                </h2>
+                <p class=" text-xl  px-7 text-text-secondary mb-4 ">Exploring how technology is reshaping the way we
+                    work from home and collaborate with teams across the globe.</p>
+                <div class="px-7 flex justify-between">
+                    <span class="text-xl text-text-secondary">March 15, 2024</span>
+                    <a href="#"><i
+                            class="fas fa-arrow-right text-primary-accent hover:text-blue-700 duration-500 cursor-pointer"></i></a>
+                </div>
+            </div>
+
+            <div
+            data-aos="fade-up"
+                class="card hover:shadow-xl duration-700 hover:-translate-y-2 rounded-2xl border border-border bg-card-bg pb-7 overflow-hidden  ">
+                <div class="w-full h-50 bg-gray-500 mb-7 relative">
+                    <img src="img/image6.png" alt="" class="w-full h-50 object-cover">
+                    <span
+                        class="type absolute left-5 top-5 text- font-semibold text-white rounded-2xl px-4 py-1 bg-purple-800/80 ">Tech</span>
+                </div>
+                <h2 class=" title px-7 text-2xl font-semibold text-text-main mb-7 ">Mobile-First Design Principles</h2>
+                <p class=" text-xl  px-7 text-text-secondary mb-4 ">Essential guidelines for creating responsive and
+                    user-friendly mobile applications in today's digital landscape.</p>
+                <div class="px-7 flex justify-between">
+                    <span class="text-xl text-text-secondary">March 3, 2024</span>
+                    <a href="#"><i
+                            class="fas fa-arrow-right text-primary-accent hover:text-blue-700 duration-500 cursor-pointer"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+        <div class="flex justify-center w-full" data-aos="fade-up">
+            <button
+                class="disabled:opacity-50 disabled:cursor-not-allowed px-10 py-3 bg-grad rounded-4xl text-xl  font-bold hover:scale-105 !border-0 !outline-0  hover:!from-primary-accent/70 hover:!to-secondary-accent/70 cursor-pointer duration-500"
+                id="load"><i class="spinner fa-solid fa-spinner animate-spin mr-2 !hidden "></i>
+                <span>Load More Posts</span>
+            </button>
+        </div>
+    </main>
+    <hr class="text-border">
+    <footer data-aos="fade-up"  class="bg-card-bg px-8 py-10 flex flex-col items-center gap-7">
+        <div class="flex flex-col items-center gap-4">
+            <h3 class="text-3xl font-bold bg-text">Creative Sroties</h3>
+            <p class="text-text-secondary text-xl">Sharing inspiration through thoughtful storytelling</p>
+            <div class="flex gap-4 mt-4">
+                <a href="#"><i
+                        class="text-2xl hover:text-primary-accent duration-300 text-text-secondary fab fa-facebook-f"></i></a>
+                <a href="#"><i
+                        class="text-2xl hover:text-primary-accent duration-300 text-text-secondary fab fa-twitter"></i></a>
+                <a href="#"><i
+                        class="text-2xl hover:text-primary-accent duration-300 text-text-secondary fab fa-instagram"></i></a>
+                <a href="#"><i
+                        class="text-2xl hover:text-primary-accent duration-300 text-text-secondary fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <hr class="text-border w-full">
+        <p class="text-text-secondary ">&copy; 2025 Creative Stories. All rights reserved.</p>
+    </footer>
+    <!-- Aos cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
